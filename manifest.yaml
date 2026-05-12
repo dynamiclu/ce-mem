@@ -1,0 +1,44 @@
+name: ce-mem
+version: 1.0.0
+type: plugin
+author: dynamiclu
+created_at: "2026-05-11T08:00:00.000000000+08:00"
+icon: memory_icon.png
+icon_dark: memory_icon.png
+verified: false
+privacy: PRIVACY.md
+label:
+  en_US: CEMemory
+  zh_Hans: 记忆插件
+description:
+  en_US: Workflow memory plugin for multi-turn conversation context storage and retrieval
+  zh_Hans: 工作流记忆插件，用于多轮对话上下文的存储和检索
+meta:
+  version: 1.0.0
+  published_plugin_sdk_version: "1.0.0"
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: "1.13.0"
+plugins:
+  tools:
+    - provider/provider.yaml
+resource:
+  memory: 1048576
+  permission:
+    tool:
+      enabled: true
+identity:
+  author: "ce-mem"
+  name: "ce-mem"
+  label:
+    en_US: "CEMemory"
+    zh_Hans: "记忆插件"
+  description:
+    en_US: "Workflow memory plugin for multi-turn conversation context storage and retrieval"
+    zh_Hans: "工作流记忆插件，用于多轮对话上下文的存储和检索"
+  icon: "memory_icon.png"

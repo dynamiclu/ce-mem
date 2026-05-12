@@ -1,0 +1,23 @@
+identity:
+  name: "ClearMemory"
+  author: "ce-mem"
+  label:
+    en_US: "ClearMemory"
+    zh_Hans: "清除记忆"
+  description:
+    human:
+      en_US: "Clear all memory for a specific key"
+      zh_Hans: "清除指定键的所有记忆"
+    llm: "Clear all memory for a specific key"
+parameters:
+  - name: key
+    type: string
+    required: true
+    label:
+      en_US: Memory Key
+      zh_Hans: 记忆键
+    human_description:
+      en_US: "Unique identifier for the conversation session"
+      zh_Hans: "对话会话的唯一标识"
+    llm_description: "Unique identifier for the conversation session"
+    form: llm

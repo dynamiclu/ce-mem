@@ -1,0 +1,20 @@
+identity:
+  name: "CEMemory"
+  author: "ce-mem"
+  label:
+    en_US: "CEMemory"
+    zh_Hans: "工作流记忆"
+  description:
+    en_US: "Workflow memory plugin for multi-turn conversation context storage and retrieval"
+    zh_Hans: "工作流记忆插件，用于多轮对话上下文的存储和检索"
+  icon: memory_icon.png
+
+tools:
+  - tools/store_memory.yaml
+  - tools/query_memory.yaml
+  - tools/clear_memory.yaml
+  - tools/get_memory_info.yaml
+
+extra:
+  python:
+    source: provider/provider.py

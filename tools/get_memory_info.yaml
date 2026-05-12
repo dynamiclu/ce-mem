@@ -1,0 +1,23 @@
+identity:
+  name: "GetMemoryInfo"
+  author: "ce-mem"
+  label:
+    en_US: "GetMemoryInfo"
+    zh_Hans: "获取记忆信息"
+  description:
+    human:
+      en_US: "Get memory metadata (turn count, timestamps)"
+      zh_Hans: "获取记忆元数据（轮数、时间戳）"
+    llm: "Get memory metadata (turn count, timestamps)"
+parameters:
+  - name: key
+    type: string
+    required: true
+    label:
+      en_US: Memory Key
+      zh_Hans: 记忆键
+    human_description:
+      en_US: "Unique identifier for the conversation session"
+      zh_Hans: "对话会话的唯一标识"
+    llm_description: "Unique identifier for the conversation session"
+    form: llm
