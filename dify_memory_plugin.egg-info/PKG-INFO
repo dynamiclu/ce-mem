@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: dify-memory-plugin
+Version: 1.0.0
+Summary: Workflow memory plugin for multi-turn conversation context
+Author: dynamiclu
+License: MIT
+Requires-Python: >=3.8
