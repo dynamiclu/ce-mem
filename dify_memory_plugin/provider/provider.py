@@ -8,7 +8,7 @@ from typing import Any, Callable, Dict, List
 
 from diffeo_sdk import DiffeoClient
 
-from .memory_store import store, query, clear, get_info
+from ..memory_store import store, query, clear, get_info
 
 
 class CEMemoryProvider:

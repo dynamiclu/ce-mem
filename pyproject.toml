@@ -12,8 +12,12 @@ requires-python = ">=3.8"
 dependencies = []
 
 [tool.setuptools]
-py-modules = ["api", "memory_store"]
-packages = ["provider"]
+packages = ["dify_memory_plugin", "dify_memory_plugin.provider", "dify_memory_plugin.tools"]
+
+[tool.setuptools.package-data]
+"dify_memory_plugin" = ["manifest.yaml", "PRIVACY.md"]
+"dify_memory_plugin.provider" = ["*.yaml"]
+"dify_memory_plugin.tools" = ["*.yaml"]
 
 [tool.dify]
 plugin = true
