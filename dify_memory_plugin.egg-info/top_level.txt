@@ -1,3 +1,1 @@
-api
-memory_store
-provider
+dify_memory_plugin
