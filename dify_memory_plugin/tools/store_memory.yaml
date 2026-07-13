@@ -1,14 +1,14 @@
 identity:
-  name: "StoreMemory"
-  author: "ce-mem"
+  name: StoreMemory
+  author: dynamiclu
   label:
-    en_US: "StoreMemory"
-    zh_Hans: "存储记忆"
-  description:
-    human:
-      en_US: "Store a conversation turn into workflow memory"
-      zh_Hans: "将对话内容存入工作流记忆"
-    llm: "Store a conversation turn into workflow memory"
+    en_US: StoreMemory
+    zh_Hans: 存储记忆
+description:
+  human:
+    en_US: Store a conversation turn into workflow memory
+    zh_Hans: 将对话内容存入工作流记忆
+  llm: Store a conversation turn into workflow memory
 parameters:
   - name: key
     type: string
@@ -17,11 +17,10 @@ parameters:
       en_US: Memory Key
       zh_Hans: 记忆键
     human_description:
-      en_US: "Unique identifier for the conversation session"
-      zh_Hans: "对话会话的唯一标识"
-    llm_description: "Unique identifier for the conversation session"
+      en_US: Unique identifier for the conversation session
+      zh_Hans: 对话会话的唯一标识
+    llm_description: Unique identifier for the conversation session
     form: llm
-
   - name: role
     type: string
     required: true
@@ -29,11 +28,10 @@ parameters:
       en_US: Role
       zh_Hans: 角色
     human_description:
-      en_US: "Message role, either 'user' or 'assistant'"
-      zh_Hans: "消息角色，'user' 或 'assistant'"
-    llm_description: "Message role, either 'user' or 'assistant'"
+      en_US: Message role, either 'user' or 'assistant'
+      zh_Hans: 消息角色，'user' 或 'assistant'
+    llm_description: Message role, either 'user' or 'assistant'
     form: llm
-
   - name: content
     type: string
     required: true
@@ -41,7 +39,10 @@ parameters:
       en_US: Content
       zh_Hans: 内容
     human_description:
-      en_US: "The message content"
-      zh_Hans: "消息内容"
-    llm_description: "The message content"
+      en_US: The message content
+      zh_Hans: 消息内容
+    llm_description: The message content
     form: llm
+extra:
+  python:
+    source: tools/store_memory.py

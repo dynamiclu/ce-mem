@@ -1,6 +1,4 @@
-"""
-Dify Workflow Memory Plugin Provider
-"""
+"""Dify Workflow Memory Plugin Provider"""
 
 from .provider import CEMemoryProvider, get_provider
 

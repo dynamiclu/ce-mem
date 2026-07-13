@@ -1,14 +1,14 @@
 identity:
-  name: "QueryMemory"
-  author: "ce-mem"
+  name: QueryMemory
+  author: dynamiclu
   label:
-    en_US: "QueryMemory"
-    zh_Hans: "查询记忆"
-  description:
-    human:
-      en_US: "Query conversation memory with specified number of turns"
-      zh_Hans: "查询指定轮数的对话记忆"
-    llm: "Query conversation memory with specified number of turns"
+    en_US: QueryMemory
+    zh_Hans: 查询记忆
+description:
+  human:
+    en_US: Query conversation memory with specified number of turns
+    zh_Hans: 查询指定轮数的对话记忆
+  llm: Query conversation memory with specified number of turns
 parameters:
   - name: key
     type: string
@@ -17,11 +17,10 @@ parameters:
       en_US: Memory Key
       zh_Hans: 记忆键
     human_description:
-      en_US: "Unique identifier for the conversation session"
-      zh_Hans: "对话会话的唯一标识"
-    llm_description: "Unique identifier for the conversation session"
+      en_US: Unique identifier for the conversation session
+      zh_Hans: 对话会话的唯一标识
+    llm_description: Unique identifier for the conversation session
     form: llm
-
   - name: size
     type: number
     required: false
@@ -30,7 +29,10 @@ parameters:
       en_US: Size
       zh_Hans: 对话轮数
     human_description:
-      en_US: "Number of conversation turns to retrieve (default 10)"
-      zh_Hans: "要检索的对话轮数（默认10）"
-    llm_description: "Number of conversation turns to retrieve"
+      en_US: Number of conversation turns to retrieve (default 10)
+      zh_Hans: 要检索的对话轮数（默认10）
+    llm_description: Number of conversation turns to retrieve
     form: llm
+extra:
+  python:
+    source: tools/query_memory.py
