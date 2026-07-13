@@ -1,5 +1,5 @@
 identity:
-  name: CEMemory
+  name: ce-mem
   author: dynamiclu
   icon: memory_icon.svg
   label:
