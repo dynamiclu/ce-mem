@@ -18,6 +18,3 @@ packages = ["dify_memory_plugin", "dify_memory_plugin.provider", "dify_memory_pl
 "dify_memory_plugin" = ["manifest.yaml", "PRIVACY.md"]
 "dify_memory_plugin.provider" = ["*.yaml"]
 "dify_memory_plugin.tools" = ["*.yaml"]
-
-[tool.dify]
-plugin = true

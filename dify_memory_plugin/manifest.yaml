@@ -3,8 +3,8 @@ version: 1.0.0
 type: plugin
 author: dynamiclu
 created_at: "2026-05-11T08:00:00.000000000+08:00"
-icon: memory_icon.png
-icon_dark: memory_icon.png
+icon: memory_icon.svg
+icon_dark: memory_icon.svg
 verified: false
 privacy: PRIVACY.md
 label:
@@ -41,4 +41,4 @@ identity:
   description:
     en_US: "Workflow memory plugin for multi-turn conversation context storage and retrieval"
     zh_Hans: "工作流记忆插件，用于多轮对话上下文的存储和检索"
-  icon: "memory_icon.png"
+  icon: "memory_icon.svg"

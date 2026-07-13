@@ -1,7 +1,8 @@
-"""
-Dify CE Memory Plugin Main Entry Point
-"""
+"""Dify CE Memory Plugin Main Entry Point"""
 
-from .provider import get_provider
+from dify_plugin import Plugin, DifyPluginEnv
 
-__all__ = ["get_provider"]
+plugin = Plugin(DifyPluginEnv(MAX_REQUEST_TIMEOUT=3600))
+
+if __name__ == "__main__":
+    plugin.run()

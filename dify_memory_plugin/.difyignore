@@ -1,0 +1,12 @@
+# 忽略临时文件
+*.pyc
+__pycache__/
+*.log
+.git/
+.gitignore
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.dify_cache/
